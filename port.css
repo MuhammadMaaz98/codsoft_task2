@@ -1,0 +1,472 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+body{
+	color: white;
+	background:#04061F;
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 10%;
+	background: purple;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+
+}
+
+.logo{
+ position: relative;
+ font-size: 33px;
+ color: steelblue;
+ text-shadow: 0 0 5px lightblue;
+ text-decoration: none;
+ font-weight: 600;
+ cursor: default;
+ opacity: 0;
+ animation: slideRight 3s ease forwards;
+}
+
+.navbar a{
+	display: inline-block;
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 35px;
+	transition: 0.3s;
+	animation: slideLeft 3s ease forwards;
+	
+}
+
+.navbar a:hover{
+	color: steelblue;
+	text-shadow: 0 0 20px lightblue,0 0 40px lightblue ;
+}
+.home{
+	font-size: 25px;
+	width: 100%;
+	height: 100vh;
+	background:#04061F;
+	background-size:cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	padding: 70px 10% 0;
+
+}
+.home-content h3{
+	animation: slideLeft 3s ease forwards;
+
+}
+.home-content h1{
+	animation: slideLeft 3s ease forwards;
+
+}
+.home-content p{
+	animation: slideLeft 3s ease forwards;
+
+}
+.circular--square{ 
+
+justify-content: center;
+	border-radius: 50%;
+	border-left: 6px solid steelblue;
+    border-right: 6px solid steelblue;
+    border-top: 6px solid purple;
+    border-bottom:  6px solid purple;
+    box-shadow: 0 0 20px purple,0 0 40px steelblue,0 0 60px purple,0 0 80px steelblue;
+    opacity: 0;
+	animation: slidebottom 2s ease forwards;
+	animation-delay: 0.5s;
+}
+
+.home-sci a{
+	display: inline-flex;
+	justify-content:center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid purple;
+	border-radius: 50%;
+	font-size: 20px;
+	color: lightblue;
+	text-decoration: none;
+	margin: 30px 15px 30px ;
+	opacity: 0;
+	animation: slideRight 2s ease forwards;
+	animation-delay: 0.5s;
+}
+.home-sci a:hover{
+	background: purple;
+	box-shadow: 0 0 20px purple;
+
+}
+.btn-box{
+	display: inline-block;
+	padding: 12px 20px;
+	background:transparent;
+	border-radius: 40px;
+	border: 2px solid purple;
+	font-size: 16px;
+	color: steelblue;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-weight: 600;
+	animation: slideLeft 3s ease forwards;
+
+
+}
+.btn-box:hover{
+	background: purple;
+	box-shadow: 0 0 20px purple;	
+}
+
+.about{
+	
+	
+	left: 0;
+	width: 100%;
+	padding: 20px 10%;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	align-items: center;
+	column-gap: 1.5rem;
+	}
+.circular---square{
+    
+
+    border-radius: 50%;
+	box-shadow: 0 0 20px purple,0 0 40px steelblue,0 0 60px purple,0 0 80px steelblue; 
+    border-left: 6px solid steelblue;
+    border-right: 6px solid steelblue;
+    border-top: 6px solid purple;
+    border-bottom:  6px solid purple;
+    opacity: 0;
+	animation: slidebottom 3s ease forwards;
+	animation-delay: 0.5s;	
+}	
+.about-text h2{
+	font-size: 60px;
+	animation: slideLeft 3s ease forwards;
+}
+.about-text span{
+	color: lightblue;
+	animation: slideLeft 3s ease forwards;
+}
+
+.about-text h4{
+	font-size: 28px;
+	animation: slideLeft 3s ease forwards;
+}
+
+.about-text p{
+	font-size: 19px;
+	animation: slideLeft 3s ease forwards;
+	animation-delay: 0.5s;
+}
+#Services{
+	color:white;
+	font-size: 20px;
+	line-height: 1.4;
+	margin-bottom: 4rem;
+}
+.sub-titles{
+	text-align: center;
+	font-size: 60px;
+	padding-bottom: 70px;
+}
+.sub-titles span{
+	color:lightblue;
+}
+.container{
+	padding: 90px;
+}
+.Services-list{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+	grid-gap: 40px;
+	margin-top: 50px;
+
+}
+.Services-list div{
+	background-color: transparent;
+	padding: 40px;
+	font-size: 13px;
+	font-weight: 13px;
+	border-right: 10px;
+	border-radius: 20px;
+	transition: background 0.5s, transform 0.5s;
+	box-shadow: 1px 1px 20px steelblue, 1px 1px 40px steelblue;
+}
+.Services-list div i {
+font-size: 50px;
+margin-bottom: 30px;
+}
+.Services-list div h2 {
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.Services-list div a {
+	text-decoration: none;
+	font-size: 12px;
+	margin-top: 20px;
+	color:steelblue;
+	display:inline-block; 
+} 
+.Services-list div P {
+	font-size: 15px;
+}
+.Services-list div:hover{
+	transform: translateY(-40px);
+}
+.read{
+	display: inline-block;
+	padding: 12px 20px;
+	background:transparent;
+	border-radius: 40px;
+	border: 2px solid purple;
+	font-size: 16px;
+	color: steelblue;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-weight: 600;
+	opacity: 0;
+	animation: slidebottom 2s ease forwards;
+
+}
+.read:hover{
+	background: purple;
+	box-shadow: 0 0 5px purple,0 0 25px purple,0 0 50px purple,0 0 100px purple,
+	0 0 200px purple;
+}
+section{
+	display: flex;
+	flex-wrap: wrap;
+}
+.container1{
+	width: 600px;
+	height: 500px;
+	padding: 75px 90px;
+	margin-left: 120px;
+}
+.heading1{
+	text-align: center;
+	text-decoration: underline;
+	 text-underline-offset: 10px;
+	text-decoration-thickness: 5px;
+	margin-bottom: 50px;  
+}
+.bar{
+	font-size: 23px;
+}
+.Technical-bars .bar{
+	margin-top: 40px 0;
+}
+.Technical-bars .barfirst-child{
+	margin-top: 0;
+}
+.Technical-bars .bar:last-child{
+	margin-bottom: 0;
+}
+.Technical-bars .bar .info{
+	margin: 6px;
+}
+.Technical-bars .bar .info span{
+	font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s  1s linear forwards;
+    opacity: 0;
+}
+.Technical-bars .bar .progress-line{
+	position:absolute;
+	border-radius: 10px;
+	width: 100%;
+	height: 5px;
+	background-color: #000000;
+	animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
+	transform: scaleX(0);
+	transform-origin: left;
+}
+
+@keyframes animate{
+	100%{
+		transform: scaleX(1);
+	}
+}
+.Technical-bars .bar .progress-line span{
+	height: 100%;
+	background-color: lightblue;
+	position: absolute;
+	border-radius: 10px;
+	animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+	transform: scaleX(0);
+	transform-origin: left;
+}
+
+.progress-line.html span{
+	width: 95%;
+}
+.progress-line.css span{
+	width: 85%;
+}
+.progress-line.javascript span{
+	width: 75%;
+}
+.progress-line.php span{
+	width: 70%;
+}
+.progress-line.python span{
+	width: 55%;
+}
+
+.progress-line span::after{
+	position: absolute;
+	padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right:-20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.html span::after{
+	content: 95%;
+}
+.progress-line.css span::after{
+	content: 85%;
+}
+.progress-line.javascript span::after{
+	content: 75%;
+}
+.progress-line.php span::after{
+	content: 70%;
+}
+.progress-line.python span::after{
+	content: 55%;
+	}
+.progress-line span::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-top-width: 0px;
+	border-top-color: #000;
+	top: -10px;
+	right: 0;
+	animation: showText 0.5s 1.5s linear forwards;
+	opacity: 0;
+
+}
+@keyframes showText{
+	100%{
+		opacity: 1;
+	}
+}
+.
+@keyframes animate-bar{
+	100%{
+		stroke-dashoffset: -1;
+	}
+}
+.path{
+	stroke-width:10;
+	stroke: lightblue;
+	fill: transparent;
+	stroke-dasharray: 502;
+	stroke-dashoffset:502;
+	stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
+
+@keyframes animate-path1{
+	100%{
+		stroke-dashoffset: 50;;
+	}
+}
+
+@keyframes animate-path2{
+	100%{
+		stroke-dashoffset: 175;;
+	}
+}
+
+@keyframes animate-path3{
+	100%{
+		stroke-dashoffset: 125;;
+	}
+}
+
+@keyframes animate-path4{
+	100%{
+		stroke-dashoffset: 75;;
+	}
+}
+
+.radial-bar .percentage{
+	position:absolute;
+	 top:50%;
+	 left: 50%;
+	 transform: translate(-50%,-50%);
+	 font-size: 17px;
+	 font-weight: 500;
+	 animation: showText 0.5s 1s linear forwards;
+	 opacity: 0;
+}
+
+@keyframes slideRight{
+	0%{
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes slideBottom{
+	0%{
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+@keyframes slidebottom{
+	0%{
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+@keyframes slideLeft{
+	0%{
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
